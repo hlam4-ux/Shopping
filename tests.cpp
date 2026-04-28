@@ -22,7 +22,7 @@ using namespace std;
 
 /**
  * this function calculates the shipping cost
- * method
+ * method tells which shipping type we use
  * @param method 
  * @param cost 
  * @return double 
