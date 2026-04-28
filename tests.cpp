@@ -31,7 +31,7 @@ double getShippopingCost(int method, double cost){
       } else if (cost < 500) {
          result = 50;
       } else {
-         result = cost * 1
+         result = cost * 0.1;
       }
    }
 
