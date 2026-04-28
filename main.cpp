@@ -49,5 +49,5 @@ int main()
   int method;
 
 
-  cout << "Hello world" << endl;
+  cout << "Enter cost" << endl;
 }
