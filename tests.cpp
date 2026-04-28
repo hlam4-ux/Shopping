@@ -24,7 +24,7 @@ using namespace std;
 double getShippingCost(int method, double cost){
    double result = -1;
    
-   //Drone
+   //Drone Delivery
    if (method == 1) {
       if (cost < 100) {
          result = -1;
