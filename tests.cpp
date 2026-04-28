@@ -45,8 +45,8 @@ double getShippingCost(int method, double cost){
    }
 
    //Standard Delivery
-   if (method == 2) {
-      
+   if (method == 3) {
+      if (cost <)
    }
       return result;
 }
