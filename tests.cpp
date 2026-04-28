@@ -21,7 +21,7 @@ using namespace std;
 
 
 
-//Your getShippingCost here - don't forget the Doxygen comment!
+double getShippopingCost(int method, double cost){ //Your getShippingCost here - don't forget the Doxygen comment!
 
 
 
