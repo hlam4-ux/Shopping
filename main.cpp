@@ -53,5 +53,5 @@ int main()
   cout << "Enter method";
   cin >> method;
 
-  
+  double shipping
 }
