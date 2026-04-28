@@ -29,7 +29,7 @@ double getShippopingCost(int method, double cost){
       if (cost < 100) {
          result = -1;
       } else if (cost < 500) {
-         res
+         result = 50;
       }
    }
 
