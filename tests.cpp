@@ -24,7 +24,7 @@ using namespace std;
  * this function calculates the shipping cost
  * method tells which shipping type we use
  * cost is the price of the order
- * it returns the shipping cost or 
+ * it returns the shipping cost or -1 if doing wrong
  * 
  * 
  */
