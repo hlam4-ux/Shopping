@@ -55,7 +55,7 @@ int main()
 
   double shipping;
   shipping = getShippingCost(method, cost);
-} 
-if (cost < 0 // method < 1 // method > 3) {
+
+if (cost < 0 // method < 1 / method > 3) {
     cout << "Bad Input" << endl;
 }
