@@ -57,5 +57,5 @@ int main()
   shipping = getShippingCost(method, cost);
 } 
 if (cost < 0 // method < 1 // method > 3) {
-    cout 
+    cout << "Bad Input "
 }
