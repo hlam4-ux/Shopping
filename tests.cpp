@@ -44,7 +44,8 @@ double getShippingCost(int method, double cost){
       }
    }
 
-   .
+   //Standard Delivery
+   
       return result;
 }
 
