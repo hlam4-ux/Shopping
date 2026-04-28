@@ -23,7 +23,8 @@ using namespace std;
 /**
  * this function calculates the shipping cost
  * method tells which shipping type we use
- * cost is the 
+ * cost is the price of the order
+ * 
  * 
  * 
  */
