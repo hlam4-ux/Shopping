@@ -51,7 +51,7 @@ double getShippingCost(int method, double cost){
       } else if (cost < 100) {
          result = 8;
       }else {
-         re
+         result = 0;
       }
    }
       return result;
