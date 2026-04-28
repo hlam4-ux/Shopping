@@ -54,5 +54,5 @@ int main()
   cin >> method;
 
   double shipping;
-  shipping = getShippingCost
+  shipping = getShippingCost(method, soct)
 }
