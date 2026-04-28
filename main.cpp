@@ -46,6 +46,8 @@ double getShippingCost(int method, double cost){
 
 int main()
 { double cost;
-  
+  int method;
+
+
   cout << "Hello world" << endl;
 }
