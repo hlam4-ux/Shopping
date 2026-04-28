@@ -65,5 +65,7 @@ else if (method == 1 && cost < 100) {
 else {
   double total = cost + shipping;
   cout << "total" << total << endl;
-
 }
+
+  return 0;
+  
