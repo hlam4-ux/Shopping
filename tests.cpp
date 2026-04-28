@@ -48,8 +48,7 @@ double getShippingCost(int method, double cost){
    if (method == 3) {
       if (cost < 35) {
          result = 5;
-         
-      }
+      } else if ()
    }
       return result;
 }
