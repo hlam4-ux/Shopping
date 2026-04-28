@@ -21,7 +21,7 @@ using namespace std;
 
 
 /**
- * @brief Get the Shipping Cost object
+ * this function calculates the shipping cost
  * 
  * @param method 
  * @param cost 
