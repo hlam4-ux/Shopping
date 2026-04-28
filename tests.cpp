@@ -27,7 +27,7 @@ double getShippopingCost(int method, double cost){
    //Drone
    if (method == 1) {
       if (cost < 100) {
-         
+         result =
       }
    }
 
