@@ -53,5 +53,6 @@ int main()
   cout << "Enter method";
   cin >> method;
 
-  double shipping
+  double shipping;
+  shipping = getShippingCost
 }
