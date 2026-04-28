@@ -1,53 +1,61 @@
+//----------------------------------------------------------
+// CS161 Assignment Starter Code
+// Copyright Andrew Scholer (ascholer@chemeketa.edu)
+// Neither this code, nor any works derived from it
+//    may be republished without approval.
+//----------------------------------------------------------
+
+//Bring in unit testing code and tell it to build a main function
+//If you have multiple unit test files, only one should have this define
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+
 #include "doctest.h"
 
+//Use Approx from doctest without saying doctest::Approx
 using doctest::Approx;
 
-int squareDifference(int a, int b)
-{
-  return (a - b) * (a - b);
+//-----------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+
+
+//Your getShippingCost here - don't forget the Doxygen comment!
+
+
+
+///----------------------------------------------------------------------------------
+/// Tests
+/// Uncomment tests to work on them. Make sure any test that does not compile or
+/// causes a crash gets commented back out. Any test that runs should be left
+/// on (uncommented), even if the test fails.
+///----------------------------------------------------------------------------------
+
+TEST_CASE( "getShippingCost Drone" ) {
+   cout << "1: getShippingCost Drone" << endl;
+   CHECK( getShippingCost(1, 100) == doctest::Approx(50) );
+   CHECK( getShippingCost(1, 400) == doctest::Approx(50) );
+   CHECK( getShippingCost(1, 615) == doctest::Approx(61.5) );
 }
 
-double distance(int x1, int y1, int x2, int y2)
-{
-  return sqrt(squareDifference(x1, x2) + squareDifference(y1, y2));
+TEST_CASE( "getShippingCost 2-Day" ) {
+   cout << "2: getShippingCost 2-Day" << endl;
+   CHECK( getShippingCost(2, 120) == doctest::Approx(12.4) );
+   CHECK( getShippingCost(2, 300) == doctest::Approx(16) );
+   CHECK( getShippingCost(2, 350) == doctest::Approx(0) );
 }
 
-TEST_CASE("squareDifference")
-{
-  // if a CHECK fails, the test case as a whole will fail, but still
-  // try the rest of the assertions.
-  CHECK(squareDifference(1, 4) == 9);
-
-  // if a REQUIRE fails, the rest of the assertions in this
-  // test case aren't even worth trying---just move on to the next
-  // test case.
-  REQUIRE(squareDifference(1, 4) == 9);
-
-  // Test that ordering does not matter
-  CHECK(squareDifference(4, 1) == 9);
-
-  // Test that negatives are handled
-  int answer3 = squareDifference(-2, -6);
-  CHECK(answer3 == 16);
+TEST_CASE( "getShippingCost Standard" ) {
+   cout << "3: getShippingCost Standard" << endl;
+   CHECK( getShippingCost(3, 10) == doctest::Approx(5) );
+   CHECK( getShippingCost(3, 50) == doctest::Approx(8) );
+   CHECK( getShippingCost(3, 200) == doctest::Approx(0) );
 }
 
-TEST_CASE("distance")
-{
-  int x1 = 0, y1 = 0;
-  int x2 = 3, y2 = 4;
-  int x3 = -2, y3 = -2;
-
-  // Approx sees if a double value is "close enough" to believe that any
-  // difference is based on rounding error.  Always test doubles using
-  // Approx.  It only exists in unit tests---do not use in normal code.
-  CHECK(distance(x1, y1, x2, y2) == Approx(5.0));
-
-  // Check reverse direction
-  CHECK(distance(x2, y2, x1, y1) == Approx(5.0));
-
-  // Test some negative coordinate values
-  double answer2 = distance(x1, y1, x3, y3);
-  double answer2Desired = 2 * sqrt(2);
-  CHECK(answer2 == Approx(answer2Desired));
+TEST_CASE( "getShippingCost Invalid" ) {
+   cout << "4: getShippingCost Invalid" << endl;
+   CHECK( getShippingCost(1, 50) == doctest::Approx(-1) );   // Drone under $100
+   CHECK( getShippingCost(4, 150) == doctest::Approx(-1) );  // Invalid method
+   CHECK( getShippingCost(0, 600) == doctest::Approx(-1) );  // Invalid method
 }
