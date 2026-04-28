@@ -52,4 +52,6 @@ int main()
   cin >> cost;
   cout << "Enter method";
   cin >> method;
+
+  
 }
