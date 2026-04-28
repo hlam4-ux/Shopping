@@ -48,7 +48,6 @@ int main()
 { double cost;
   int method;
 
-
   cout << "Enter cost"; 
-  cin >>
+  cin >> cost;
 }
