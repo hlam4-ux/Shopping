@@ -35,6 +35,7 @@ double getShippingCost(int method, double cost){
       }
    }
 
+   //2-Day Delivery
    
       return result;
 }
