@@ -59,4 +59,4 @@ int main()
 if (cost < 0 || method < 1 || method > 3) {
     cout << "Bad Input" << endl;
 }
-else if 
+else if (method == 1 &&)
