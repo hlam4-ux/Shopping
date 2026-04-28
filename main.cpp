@@ -50,5 +50,5 @@ int main()
 
   cout << "Enter cost"; 
   cin >> cost;
-  cout << "Enter method"
+  cout << "Enter method";
 }
