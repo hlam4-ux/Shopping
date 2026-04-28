@@ -50,4 +50,5 @@ int main()
 
   cout << "Enter cost"; 
   cin >> cost;
+  cout 
 }
