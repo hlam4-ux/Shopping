@@ -38,7 +38,7 @@ double getShippingCost(int method, double cost){
    //2-Day Delivery
    if (method == 2) {
       if (cost <= 300) {
-         result = 10 + cost *
+         result = 10 + cost * 0.02;
       }
    }
       return result;
