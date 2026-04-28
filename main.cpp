@@ -63,5 +63,6 @@ else if (method == 1 && cost < 100) {
     cout << "Not available" << endl;
 }
 else {
-  double total = cost + shipping
+  double total = cost + shipping;
+  
 }
