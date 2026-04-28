@@ -22,7 +22,7 @@ using namespace std;
 
 
 double getShippopingCost(int method, double cost){
-   
+   double result = -1; 
 
 
 
