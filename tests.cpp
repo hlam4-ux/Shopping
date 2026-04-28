@@ -23,9 +23,9 @@ using namespace std;
 /**
  * this function calculates the shipping cost
  * method tells which shipping type we use
- * @param method 
- * @param cost 
- * @return double 
+ *  
+ * 
+ * 
  */
 double getShippingCost(int method, double cost){
    double result = -1;
