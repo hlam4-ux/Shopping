@@ -44,7 +44,7 @@ double getShippingCost(int method, double cost){
       }
    }
 
-   
+   .
       return result;
 }
 
