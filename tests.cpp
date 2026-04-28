@@ -40,9 +40,11 @@ double getShippingCost(int method, double cost){
       if (cost <= 300) {
          result = 10 + cost * 0.02;
       } else {
-         result
+         result = 0;
       }
    }
+
+   
       return result;
 }
 
