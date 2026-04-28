@@ -62,3 +62,6 @@ if (cost < 0 || method < 1 || method > 3) {
 else if (method == 1 && cost < 100) {
     cout << "Not available" << endl;
 }
+else {
+  double total 
+}
