@@ -20,7 +20,13 @@ using doctest::Approx;
 using namespace std;
 
 
-//
+/**
+ * @brief Get the Shipping Cost object
+ * 
+ * @param method 
+ * @param cost 
+ * @return double 
+ */
 double getShippingCost(int method, double cost){
    double result = -1;
    
