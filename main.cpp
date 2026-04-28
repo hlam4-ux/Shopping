@@ -56,3 +56,4 @@ int main()
   double shipping;
   shipping = getShippingCost(method, cost);
 } 
+if 
